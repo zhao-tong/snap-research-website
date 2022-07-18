@@ -99,22 +99,21 @@
 
     $(function() {
       const headerRoutes = {
-        home: 'index.html',
-        logo: 'img/snap-logo.svg',
-        fellowships: 'fellowships.html',
-        computationalImaging: 'team/category/computational-imaging.html',
-        computationalSocialScience: 'team/category/computational-social-science.html',
-        humanComputerInteraction: 'team/category/human-computer-interaction.html',
-        creativeVision: 'team/category/creative-vision.html',
-        allTeam: 'team/category/all.html',
-        publications: 'publications.html',
-        news: 'news.html'
+        home: '/index.html',
+        logo: '/img/snap-logo.svg',
+        computationalImaging: '/team/category/computational-imaging.html',
+        computationalSocialScience: '/team/category/computational-social-science.html',
+        humanComputerInteraction: '/team/category/human-computer-interaction.html',
+        creativeVision: '/team/category/creative-vision.html',
+        allTeam: '/team/category/all.html',
+        publications: '/publications.html',
+        news: '/news.html'
       };
       const footerRoutes = {
-        logo: 'img/snap-logo-footer.svg',
-        publications: 'publications.html',
-        news: 'news.html',
-        allTeam: 'team/category/all.html',
+        logo: '/img/snap-logo-footer.svg',
+        publications: '/publications.html',
+        news: '/news.html',
+        allTeam: '/team/category/all.html',
       };
 
       $('.header-container').loadTemplate("/templates/components/header.html",headerRoutes);
