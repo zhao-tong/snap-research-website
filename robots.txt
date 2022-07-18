@@ -1,0 +1,2 @@
+User-agent: *
+SITEMAP: https://research.snap.com/sitemap.xml

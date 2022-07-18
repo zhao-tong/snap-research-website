@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="Snap Research, Snap, Snapchat Research, Snap Research Website, Snap, Research, Data Mining, Computer Vision, Snapchat, Snapchat Research, snap research" data-react-helmet="true">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/forbusiness-cms-assets/favicon.ico">
+
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+  <link rel="stylesheet" href="../../fonts/stylesheet.css">
+
+  <script src="../../js/jquery.1.10.2.min.js"></script>
+  <script src="../../js/jquery.loadTemplate.min.js"></script>
+</head>
+
+<body>
+
+  <div class="header-container header-dark"></div>
+
+  <div class="team">
+    <div class="sub-hero">
+      <div class="container">
+        <h1 class="no-border">Team</h1>
+      </div>
+    </div>
+
+    <div class="team--nav-wrapper container">
+      <img class="team--nav-scroll left" src="../../img/keyboard-left-arrow-button.svg" alt="">
+      <img class="team--nav-scroll rigth" src="../../img/keyboard-left-arrow-button.svg" alt="">
+      <div class="team--nav-menu dragscroll">
+        <div class="team--nav-items ">
+          <a class="team--nav-link active" href="computational-imaging.html">Computational&nbsp;Imaging</a>
+          <a class="team--nav-link " href="computational-social-science.html">Computational&nbsp;Social&nbsp;Science</a>
+          <a class="team--nav-link " href="human-computer-interaction.html">Human&nbsp;Computer&nbsp;Interaction</a>
+          <a class="team--nav-link " href="creative-vision.html">Creative&nbsp;Vision</a>
+          <a class="team--nav-link " href="all.html">All</a>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="team--nav-h3 container">About Us</h3>
+    <p class="container">The computation imaging group is focused on developing novel imaging techniques that combine hardware advanced
+      algorithms to capture and display visual information in fundamentally new ways.</p>
+
+    <div class="team--group">
+      <div class="container">
+        <!-- team-members -->
+        <div class="team-members-container row"></div>
+        <!-- team-members -->
+      </div>
+
+      <div class="team--detail-publications container">
+
+        <!-- publications -->
+        <h2 class="title">Publications</h2>
+        <div class="publications-for-member"></div>
+        <!-- publications -->
+
+        <!-- events -->
+        <h2 class="title">Events</h2>
+        <div class="events-for-member"></div>
+        <!-- events -->
+
+      </div>
+    </div>
+  </div>
+
+  <div class="join-our-team-container"></div>
+  <div class="footer-container"></div>
+
+  <script src="../../js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="../../js/plugins.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/events-lib.js"></script>
+  <script src="../../js/team-members-lib.js"></script>
+  <script src="../../js/publications-lib.js"></script>
+  <script src="../../js/team.js"></script>
+  <script src="../../js/dragscroll.js"></script>
+  <script src="../../js/handle-scroll-left.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <script type="text/javascript">
+    $(function () {
+      const headerRoutes = {
+          home: '../../index.html',
+          logo: '../../img/snap-logo.svg',
+          fellowships: '../../fellowships.html',
+          computationalImaging: '../../team/category/computational-imaging.html',
+          computationalSocialScience: '../../team/category/computational-social-science.html',
+          humanComputerInteraction: '../../team/category/human-computer-interaction.html',
+          creativeVision: '../../team/category/creative-vision.html',
+          allTeam: '../../team/category/all.html',
+          publications: '../../publications.html',
+          news: '../../news.html'
+        };
+      const footerRoutes = {
+        logo: '../../img/snap-logo-footer.svg',
+        publications: '../../publications.html',
+        news: '../../news.html',
+        allTeam: '../../team/category/all.html',
+      };
+
+      publicationForCategory.forEach((publication) => {
+        publication.url = "../../" + publication.url;
+      });
+
+      $('.header-container').loadTemplate("../../templates/components/header.html", headerRoutes);
+
+      $('.join-our-team-container').loadTemplate("../../templates/components/join.html");
+      $('.footer-container').loadTemplate("../../templates/components/footer.html", footerRoutes);
+
+      $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html",
+        publicationForCategory);
+
+      $('.events-for-member').loadTemplate("../../templates/components/events-for-member.html",
+        getEvents().slice(0,5));
+
+      $('.team-members-container').loadTemplate("../../templates/components/team-member-card.html",
+        getMembersByIDs(teamMembersForTeamCategory.computationalImaging, '../../'));
+
+    });
+  </script>
+
+</body>
+
+</html>

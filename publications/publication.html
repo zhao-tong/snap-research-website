@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="Snap Research, Snap, Snapchat Research, Snap Research Website, Snap, Research, Data Mining, Computer Vision, Snapchat, Snapchat Research, snap research" data-react-helmet="true">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/forbusiness-cms-assets/favicon.ico">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../fonts/stylesheet.css">
+
+  <script src="../js/jquery.1.10.2.min.js"></script>
+  <script src="../js/jquery.loadTemplate.min.js"></script>
+</head>
+
+<body>
+
+  <div class="header-container header-dark"></div>
+
+  <div class="publication-container"></div>
+
+  <div class="publication-member"></div>
+  <div class="join-our-team-container"></div>
+  <div class="footer-container"></div>
+
+  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/events-lib.js"></script>
+  <script src="../js/team-members-lib.js"></script>
+  <script src="../js/publications-lib.js"></script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <script type="text/html" id="publication-template">
+    <div class="sub-hero">
+      <div class="container">
+        <a class="category back-link">Back</a>
+        <h2 class="no-border" data-content="title"></h2>
+      </div>
+    </div>
+    <div class="container content" itemscope="" itemtype="https://schema.org/Article">
+      <div class="publication--detail">
+        <div class="publication--detail-authors" data-content="authors"></div>
+        <div class="row m-0">
+          <div class="publication--detail-date" itemprop="datePublished">
+            <span class="bolded">Date</span>
+            <span data-content="date"></span>
+          </div>
+        </div>
+        <div class="row m-0">
+          <div class="publication--detail-event">
+            <span class="bolded">Event</span>
+            <span data-content="eventShort"></span>
+          </div>
+        </div>
+        <div class="publication--detail-research-areas">
+          <span class="bolded">Research Areas</span>
+          <span data-content="researchArea" class="research-areas"></span>
+        </div>
+        <div data-content="description" class="publication--detail-content" itemprop="articleBody"></div>
+
+        <div data-content="PDFLink" data-format="ButtonFormatter" class="publication--detail-file-wrap"></div>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/javascript">
+    $.addTemplateFormatter({
+      ButtonFormatter : function(value, template) {
+        if(value === "") {
+          return "<p><i>PDF link will be available soon. </i></p>"
+        } else {
+          return `<a href=${value} target="_blank" rel="noopener noreferrer" class="publication--detail-file-download" download="">Download PDF</a>`
+        }
+      }
+    });
+
+    $(function () {
+      const headerRoutes = {
+        home: '../index.html',
+        logo: '../img/snap-logo.svg',
+        fellowships: '../fellowships.html',
+        computationalImaging: '../team/category/computational-imaging.html',
+        computationalSocialScience: '../team/category/computational-social-science.html',
+        humanComputerInteraction: '../team/category/human-computer-interaction.html',
+        creativeVision: '../team/category/creative-vision.html',
+        allTeam: '../team/category/all.html',
+        publications: '../publications.html',
+        news: '../news.html'
+      };
+      const footerRoutes = {
+        logo: '../img/snap-logo-footer.svg',
+        publications: '../publications.html',
+        news: '../news.html',
+        allTeam: '../team/category/all.html',
+      };
+      $('.header-container').loadTemplate("../templates/components/header.html", headerRoutes);
+      $('.join-our-team-container').loadTemplate("../templates/components/join.html");
+      $('.footer-container').loadTemplate("../templates/components/footer.html", footerRoutes);
+
+      const singlePublication = getPublicationBySlug(window.location.hash);
+      if (!singlePublication[0]) $(location).attr("href", "../404.html");
+
+      $('.publication-container').loadTemplate($('#publication-template'), singlePublication);
+      document.title = singlePublication[0].metaTitle;
+      $('meta[name=description]').attr('content', singlePublication[0].metaDescription);
+      $('meta[property="og:title"]').attr('content', singlePublication[0].metaTitle);
+      $('meta[property="og:description"]').attr('content', singlePublication[0].metaDescription);
+
+      $('.back-link').on('click', function() {
+        window.history.back();
+      })
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fellowship Program - Snap Research</title>
+  <meta name="description" content="If you are interested in applying to the 2022 Fellowship program, please apply here.">
+  <meta property="og:title" content="Fellowship Program - Snap Research">
+  <meta property="og:description" content="Snap Research serves as an innovation engine for the company. Our projects range from solutions to hard technical problems that significantly enhance Snap’s existing products, to riskier explorations that can lead to fundamental paradigm shifts in the way people communicate and express themselves.">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="Snap Research, Snap, Snapchat Research, Snap Research Website, Snap, Research, Data Mining, Computer Vision, Snapchat, Snapchat Research, snap research" data-react-helmet="true">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/forbusiness-cms-assets/favicon.ico">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+
+  <script src="js/jquery.1.10.2.min.js"></script>
+  <script src="js/jquery.loadTemplate.min.js"></script>
+</head>
+
+<body>
+
+<div class="header-container header-dark"></div>
+
+<div class="publication container content">
+ <!--  <div class="publication--search fellowships--search">
+    <div class="search-box">
+      <div class="search-box--filter">
+        <div class="search-box--filter-inputs">
+          <div class="search-box--filter-wrap">
+            <input class="search-box--filter-input" placeholder="Search">
+            <button class="search-box--filter-submit"></button>
+          </div>
+        </div>
+      </div>
+      <div class="search-box--sort">
+        <div class="search-box--sort-inputs">
+          <p class="search-box--title">
+            Sort by
+          </p>
+          <label class="radio-container bordered">
+            Newest to Oldest
+            <input type="radio" checked="checked" value="ASC" name="date_sort">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="radio-container">
+            Oldest to Newest
+            <input type="radio" value="DESC" name="date_sort">
+            <span class="checkmark"></span>
+          </label>
+
+        </div>
+      </div>
+      <div class="search-box--sort">
+        <div class="search-box--sort-inputs">
+          <p class="search-box--title">
+            Year published
+          </p>
+          <div class="search-box--sort-year">
+            <select class="dropdown-select">
+              <option value="All">All</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="publication--list fellowships--list">
+    <div class="sub-hero">
+      <div class="container">
+        <h1 class="no-border">Fellowship Program</h1>
+        <p>If you are interested in applying to the 2022 Fellowship program, please apply below.</p>
+        <div class="news--group-link">
+          <a class="cta" href="www.google.com">Apply to Fellowship Program</a>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+<!--     <div class="publication--group-wrapper fellowships--group-wrapper">
+
+      <div class="publication-list-item fellowships-list-item"></div>
+
+      <ul class="publication--group-pagination fellowships--group-pagination"></ul>
+
+    </div>
+  </div>
+</div> -->
+
+<div class="join-our-team-container"></div>
+<div class="footer-container"></div>
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/fellowships-lib.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+<script type="text/javascript">
+  $(function () {
+    const paginationCount = 3;
+    const dropdownPeriodFrom = 2016;
+    const dropdownPeriodTo = new Date().getFullYear();
+    const dateRangeOfYears = dropdownPeriodTo - dropdownPeriodFrom;
+    fellowshipsList.sort(function(a,b){
+      return new Date(b.date) - new Date(a.date);
+    });
+    const headerRoutes = {
+      home: 'index.html',
+      logo: 'img/snap-logo.svg',
+      fellowships: 'fellowships.html',
+      computationalImaging: 'team/category/computational-imaging.html',
+      computationalSocialScience: 'team/category/computational-social-science.html',
+      humanComputerInteraction: 'team/category/human-computer-interaction.html',
+      creativeVision: 'team/category/creative-vision.html',
+      allTeam: 'team/category/all.html',
+      publications: 'publications.html',
+      news: 'news.html'
+    };
+    const footerRoutes = {
+      logo: 'img/snap-logo-footer.svg',
+      publications: 'publications.html',
+      news: 'news.html',
+      allTeam: 'team/category/all.html',
+    };
+
+    $('.header-container').loadTemplate("templates/components/header.html", headerRoutes);
+    $('.fellowships-list-item').loadTemplate("templates/components/fellowships-list-item.html", fellowshipsList);
+    $('.join-our-team-container').loadTemplate("templates/components/join.html");
+    $('.footer-container').loadTemplate("templates/components/footer.html", footerRoutes);
+
+    function searchItem (arr, val) {
+      let result = arr.filter((item)=>{
+        return item.title.includes(val);
+      })
+      return result
+    };
+
+    function searchHandler() {
+      let val = $('.search-box--filter-input').val();
+      let filtered = searchItem(fellowshipsList, val);
+      renderBreadcrumbs(filtered);
+      $('.fellowships-list-item').loadTemplate("templates/components/fellowships-list-item.html", filtered);
+      setTimeout(function() {
+        switchPagination(1);
+      }, 200);
+      if (filtered.length === 0) {
+        $('.fellowships-list-item').append(
+          `<p>There is no result for: ${val}</p>`
+        )
+      }
+    }
+
+    $('.search-box--filter-submit').on('click', function(){
+      searchHandler();
+    })
+    $('.search-box--filter-input').on('keypress', function(ev) {
+      var keycode = (ev.keyCode ? ev.keyCode : ev.which);
+      if (keycode == '13') {
+        searchHandler();
+      }
+    });
+
+    function renderBreadcrumbs (list) {
+      $('.fellowships--group-pagination').empty();
+      if(list.length/paginationCount > 1) {
+        for (let i = 0; i < list.length/paginationCount; i++){
+          $('.fellowships--group-pagination').append(
+            `<li class="noactive">
+            <button type="button" class="pagination-link" value="${i+1}">${i+1}</button>
+          </li>`
+          )
+        }
+        $('.fellowships--group-pagination li').first().attr('class', 'active');
+      }
+    }
+    renderBreadcrumbs(fellowshipsList);
+
+    function switchPagination (page) {
+      $('.fellowships--group').each(function(index) {
+        if((page-1)*paginationCount <= index && index < (page)*paginationCount) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      });
+    };
+
+    setTimeout(function() {
+      switchPagination(1);
+    }, 200);
+
+    $('.fellowships--group-pagination').on('click', 'button', function(elem){
+      $('.fellowships--group-pagination li').attr('class', 'noactive');
+      $(this).closest('li').attr('class', 'active');
+      switchPagination(elem.target.value)
+    })
+
+    $('.radio-container input').on('change', function(el){
+      $('.search-box--filter-input').val('');
+      let val = el.target.value;
+      if (val === 'ASC') {
+        fellowshipsList.sort(function(a,b){
+          return new Date(b.date) - new Date(a.date);
+        });
+      } else if (val === 'DESC') {
+        fellowshipsList.reverse()
+      }
+      $('.fellowships-list-item').loadTemplate("templates/components/fellowships-list-item.html", fellowshipsList);
+    });
+
+    for (let i = 0; i <= dateRangeOfYears; i++ ) {
+      $('.dropdown-select').append(
+        `<option value="${dropdownPeriodFrom + i}">${dropdownPeriodFrom + i}</option>`
+      )
+    };
+    $('.dropdown-select').on('change', function(e) {
+      const val = e.target.value;
+      if (val === 'All') {
+        renderBreadcrumbs(fellowshipsList);
+        $('.fellowships-list-item').loadTemplate("templates/components/fellowships-list-item.html", fellowshipsList);
+        setTimeout(function() {
+          switchPagination(1);
+        }, 200);
+      } else {
+        const filtered = fellowshipsList.filter((item) => {
+          return new Date(item.date).getFullYear() === Number(val);
+        });
+        renderBreadcrumbs(filtered);
+        $('.fellowships-list-item').loadTemplate("templates/components/fellowships-list-item.html", filtered);
+        setTimeout(function() {
+          switchPagination(1);
+        }, 200);
+        if (filtered.length === 0) {
+          $('.fellowships-list-item').append(
+            `<p>There is no result for: ${val}</p>`
+          )
+        }
+      }
+    })
+  });
+</script>
+</body>
+
+</html>

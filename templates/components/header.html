@@ -1,0 +1,33 @@
+<header class="header-component">
+  <a aria-current="page" class="header--nav-logo" data-href="home">
+    <img data-src="logo" alt="Snap Logo">
+    Snap Research
+  </a>
+  <div class="header--nav-toggle" role="presentation"><div></div><div></div><div></div></div>
+  <div class="header--nav-items">
+    <div class="header--dropdown-wrap">
+      <a class="header--nav-link call-dropdown">Team</a>
+      <div class="header--dropdown">
+        <a class="header--dropdown-link" data-href="computationalImaging">Computational Imaging</a>
+        <a class="header--dropdown-link" data-href="computationalSocialScience">Computational Social Science</a>
+        <a class="header--dropdown-link" data-href="humanComputerInteraction">Human Computer Interaction</a>
+        <a class="header--dropdown-link" data-href="creativeVision">Creative Vision</a>
+        <a class="header--dropdown-link" data-href="allTeam">All</a>
+      </div>
+    </div>
+    <a class="header--nav-link" data-href="publications">Publications</a>
+    <a class="header--nav-link" data-href="news">Research News</a>
+    <a href="https://snap.submittable.com/submit" target="_blank" rel="noopener noreferrer" class="header--nav-link">Internships</a>
+    <a class="header--nav-link" data-href="fellowships">Fellowship Program</a>
+    <a href="https://www.snap.com/jobs/?teams=Research" target="_blank" rel="noopener noreferrer" class="header--nav-link">Careers</a>
+  </div>
+</header>
+
+<script>
+  $(function () {
+    $('.header--nav-toggle').on('click', function(){
+      $(this).toggleClass('opened');
+      $('.header-component').toggleClass('opened');
+    })
+  });
+</script>

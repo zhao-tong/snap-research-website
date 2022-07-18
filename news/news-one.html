@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="Snap Research serves as an innovation engine for the company. Our projects range from solutions to hard technical problems that significantly enhance Snap’s existing products, to riskier explorations that can lead to fundamental paradigm shifts in the way people communicate and express themselves.">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="Snap Research serves as an innovation engine for the company. Our projects range from solutions to hard technical problems that significantly enhance Snap’s existing products, to riskier explorations that can lead to fundamental paradigm shifts in the way people communicate and express themselves.">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="Snap Research, Snap, Snapchat Research, Snap Research Website, Snap, Research, Data Mining, Computer Vision, Snapchat, Snapchat Research, snap research" data-react-helmet="true">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/forbusiness-cms-assets/favicon.ico">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../fonts/stylesheet.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="../js/jquery.1.10.2.min.js"></script>
+  <script src="../js/jquery.loadTemplate.min.js"></script>
+</head>
+
+<body>
+
+  <div class="header-container header-dark"></div>
+
+  <div class="news">
+    <div class="news-container"></div>
+    <div class="news--detail-content"></div>
+  </div>
+
+  <div class="publication-member"></div>
+  <div class="join-our-team-container"></div>
+  <div class="footer-container"></div>
+
+  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/news-lib.js"></script>
+  <script src="../js/events-lib.js"></script>
+  <script src="../js/team-members-lib.js"></script>
+  <script src="../js/publications-lib.js"></script>
+  <script src="../js/fellowships-lib.js"></script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <script type="text/html" id="news-template">
+    <div class="sub-hero">
+      <div class="container">
+        <a class="category" href="../news.html">Back to News</a>
+        <h2 class="no-border" data-content="title"></h2>
+      </div>
+    </div>
+    <div class="container content">
+      <div class="news--detail">
+        <div class="news--detail-date" data-content="date"></div>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/javascript">
+
+    $(function () {
+      const headerRoutes = {
+        home: '../index.html',
+        logo: '../img/snap-logo.svg',
+        fellowships: '../fellowships.html',
+        computationalImaging: '../team/category/computational-imaging.html',
+        computationalSocialScience: '../team/category/computational-social-science.html',
+        humanComputerInteraction: '../team/category/human-computer-interaction.html',
+        creativeVision: '../team/category/creative-vision.html',
+        allTeam: '../team/category/all.html',
+        publications: '../publications.html',
+        news: '../news.html'
+      };
+      const footerRoutes = {
+        logo: '../img/snap-logo-footer.svg',
+        publications: '../publications.html',
+        news: '../news.html',
+        allTeam: 'team/category/all.html',
+      };
+      $('.header-container').loadTemplate("../templates/components/header.html", headerRoutes);
+      $('.join-our-team-container').loadTemplate("../templates/components/join.html");
+      $('.footer-container').loadTemplate("../templates/components/footer.html", footerRoutes);
+
+      $('.back-link').on('click', function () {
+        window.history.back();
+      })
+      const singleNews = getNewsBySlug(window.location.hash);
+      if (!singleNews[0]) $(location).attr("href", "../404.html");
+
+      $('.news-container').loadTemplate($('#news-template'), singleNews);
+      document.title = singleNews[0].metaTitle;
+
+      $('meta[name=description]').attr('content', singleNews[0].metaDescription);
+      $('meta[property="og:title"]').attr('content', singleNews[0].metaTitle);
+      // the description for news in the main site is the same then in index.html, so i comment row below
+      // $('meta[property="og:description"]').attr('content', singleNews[0].metaDescription);
+      $('.news--detail-content').loadTemplate(singleNews[0].description);
+
+    });
+  </script>
+</body>
+
+</html>
