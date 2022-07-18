@@ -1,5 +1,5 @@
 const teamMembersList = [
- {
+  {
     id: 0,
     metaTitle: "",
     metaDescription: `
@@ -26,7 +26,7 @@ const teamMembersList = [
     imageUrl:
       "../../img-for-members/Bing-Zhou.png",
     description: `
-    <p><p>.
+    <p>Bing is a Senior Research Engineer in the Computational Imaging team at Snap Research NYC. His research interests include mobile sensing/perception, augmented reality, human computer interaction and computer vision. Before joining Snap, Bing was a research staff member at IBM Research. Bing received his PhD from ECE department, Stony Brook University in 2019. His research efforts have been published in SigMobile venues such as MobiCom, MobiSys, SenSys, etc.<p>Learn more about his work <a href='https://zhoubinwy.github.io/'><u>here</u></a>.
     `,
   },
   {
@@ -42,7 +42,7 @@ const teamMembersList = [
     imageUrl:
       "https://images.ctfassets.net/btheynltg5cn/3C3Gss7SDX7l2VW4wdFJRS/09b8878574e6d859acb5e15ef1d916da/GuruK2019.png",
     description: `
-    <p><p>Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about his work&nbsp;<a href="http://www.gurukrishnan.com/"><u>here</u></a>.
+    <p><p>Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. <p>Learn more about his work&nbsp;<a href="http://www.gurukrishnan.com/"><u>here</u></a>.
     `,
   },
 
@@ -113,7 +113,7 @@ const teamMembersList = [
     <p>Sizhuo Ma is a Research Scientist on the Computational Imaging Team. His research interests lie in computer vision and computational imaging. His previous work focuses on solving motion-related computer vision problems using novel cameras including light field cameras, structured light and single-photon cameras. He received a PhD in Computer Sciences from University of Wisconsin-Madison in 2022. Learn more about his work <a href="https://sizhuoma.netlify.app/"><u>here</u></a>.</p>
     `,
   },
-{
+  {
     id: 7,
     metaTitle: "",
     metaDescription: `
@@ -145,7 +145,7 @@ const teamMembersList = [
     <p>Colin is a Lead Research Engineer whose initial focus is to advance cloud infrastructure and build out new systems for Snap Research. His work allows Research Engineers and Scientists to train models, run experiments, and solicit feedback among other tasks. He joined Snap Inc. in 2017 as a member of the Developer Tools team, creating tools to improve code quality and manage build infrastructure. Previously, he worked for Ever.ai, a face recognition platform, where he set up the initial machine learning infrastructure for both training and inference. Colin received his Master’s degree in Software Engineering from McMaster University.&nbsp;</p>
     `,
   },
- 
+
   {
     id: 101,
     metaTitle: "",
@@ -422,7 +422,7 @@ const teamMembersList = [
     <p>Yu Jiang is a Senior Research Engineer on the Human Computer Interaction group. Before joining Snap Research, he was part of the Spectacles team working on firmware development and prototyping for Spectacles V1, V2, and V3. Prior to joining Snap, he  worked on various projects at Apple in robotics, automated testing, and development.&nbsp;</p>
     `,
   },
- {
+  {
     id: 300,
     metaTitle: "",
     metaDescription: `
@@ -571,7 +571,7 @@ const teamMembersForTeamCategory = {
       ...this.computationalSocialScience,
       ...this.humanComputerInteraction,
       ...this.creativeVision,
-     ...this.admin,
+      ...this.admin,
     ];
   },
 };
