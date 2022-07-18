@@ -38,9 +38,6 @@ $(function () {
     });
   });
 
-  console.log(publicationForCategory)
-
-
   if (!publicationForCategory.length) {
     $(".team--detail-publications h2:eq(0)").hide();
   }
