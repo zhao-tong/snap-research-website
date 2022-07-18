@@ -7,6 +7,7 @@ const teamMembersList = [
     name: "Andrea Sornoza",
     email: "",
     subTitle: "Program Manager",
+    researchAreas: "Program Management",
     backUrl: "../team/category/computational-imaging.html",
     imageUrl: "../../img-for-members/andrea-sornoza.png",
     description: `
@@ -563,7 +564,7 @@ const teamMembersForTeamCategory = {
   computationalSocialScience: [100, 101, 102, 103, 104, 105, 106, 107, 108, 109],
   humanComputerInteraction: [200, 201, 202, 203, 204, 205, 206, 207],
   creativeVision: [300, 301, 302, 303, 304, 305, 306],
-  admin: [400],
+  admin: [],
 
   get all() {
     return [
