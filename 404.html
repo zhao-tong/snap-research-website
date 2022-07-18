@@ -13,14 +13,14 @@
   <meta property="og:image" content="" />
 
   <!--  <link rel="manifest" href="site.webmanifest">-->
-  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="apple-touch-icon" href="/icon.png" />
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/bootstrap-grid.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <link rel="stylesheet" href="fonts/stylesheet.css" />
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/bootstrap-grid.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <link rel="stylesheet" href="/fonts/stylesheet.css" />
 
   <style>
     body .d404 {
@@ -61,8 +61,8 @@
   </style>
 
   <meta name="theme-color" content="#fafafa" />
-  <script src="js/jquery.1.10.2.min.js"></script>
-  <script src="js/jquery.loadTemplate.min.js"></script>
+  <script src="/js/jquery.1.10.2.min.js"></script>
+  <script src="/js/jquery.loadTemplate.min.js"></script>
 </head>
 
 <body>
@@ -79,10 +79,10 @@
   <div class="join-our-team-container"></div>
   <div class="footer-container"></div>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/news-lib.js"></script>
+  <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/news-lib.js"></script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga=function() {ga.q.push(arguments)}; ga.q=[]; ga.l=+new Date;
@@ -117,10 +117,10 @@
         allTeam: 'team/category/all.html',
       };
 
-      $('.header-container').loadTemplate("templates/components/header.html",headerRoutes);
-      $('.news-one-container').loadTemplate("templates/components/news-one-template.html", getNews());
-      $('.join-our-team-container').loadTemplate("templates/components/join.html");
-      $('.footer-container').loadTemplate("templates/components/footer.html", footerRoutes);
+      $('.header-container').loadTemplate("/templates/components/header.html",headerRoutes);
+      $('.news-one-container').loadTemplate("/templates/components/news-one-template.html", getNews());
+      $('.join-our-team-container').loadTemplate("/templates/components/join.html");
+      $('.footer-container').loadTemplate("/templates/components/footer.html", footerRoutes);
 
     });
   </script>
