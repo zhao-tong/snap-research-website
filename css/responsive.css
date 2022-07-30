@@ -149,10 +149,24 @@
     border-bottom: 4px solid transparent;
     border-top: 4px solid #fff;
   }
+  .header-res-container .header--dropdown-wrap:hover .header--nav-link:before {
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid #fff;
+  }
   .header--dropdown-wrap {
     width: 100%;
   }
   .header-dark .header--dropdown {
+    position: relative;
+    transform: translate(0,0);
+    left: 0;
+    top: 0;
+    box-shadow: none;
+    width: 100%;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  .header-res-container .header--dropdown {
     position: relative;
     transform: translate(0,0);
     left: 0;
