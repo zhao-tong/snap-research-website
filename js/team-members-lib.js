@@ -359,7 +359,7 @@ const teamMembersList = [
     `,
   },
   {
-    id: 204,
+    id: 205,
     metaTitle: "",
     metaDescription: `
     Jack is a Research Engineer on Snap Research's Seattle team. His works are focused on user experience, and prototyping and exploring potential new features to be incorporated with the product. Before joining Snap, Jack worked at Stitchbridge, Oculus Research (now as Facebook Reality Lab), and Next Animation Studio for Research and Development of AR/VR, Computer Graphics, Gaming and Animation field in the United States and Taiwan. His works include conducting computer graphic research, developing in-house software, integrating research and improving the production pipeline. He received his Master’s degrees in Computer Science from National Taiwan University in 2008 and in Entertainment Technology from Carnegie Mellon University in 2016.
@@ -376,7 +376,7 @@ const teamMembersList = [
     `,
   },
   {
-    id: 205,
+    id: 206,
     metaTitle: "",
     metaDescription: `
         `,
@@ -392,7 +392,7 @@ const teamMembersList = [
     `,
   },
   {
-    id: 206,
+    id: 207,
     metaTitle: "",
     metaDescription: `
         `,
@@ -408,7 +408,7 @@ const teamMembersList = [
     `,
   },
   {
-    id: 207,
+    id: 208,
     metaTitle: "",
     metaDescription: `
         `,
@@ -562,7 +562,7 @@ teamMembersList.forEach((teamMember) => {
 const teamMembersForTeamCategory = {
   computationalImaging: [0, 1, 2, 3, 4, 5, 6, 7],
   computationalSocialScience: [100, 101, 102, 103, 104, 105, 106, 107, 108, 109],
-  humanComputerInteraction: [200, 201, 202, 203, 204, 205, 206, 207],
+  humanComputerInteraction: [200, 201, 202, 203, 204, 205, 206, 207, 208],
   creativeVision: [300, 301, 302, 303, 304, 305, 306],
   admin: [],
 
