@@ -304,7 +304,7 @@ const teamMembersList = [
     researchAreas: "Graph Machine Learning, Data Mining, Computational Social Science",
     backUrl: "../team/category/computational-social-science.html",
     imageUrl:
-      "../../img-for-members/Tong-Zhao.png",
+      "../../img-for-members/Tong-Zhao.jpg",
     description: `
     <p>Tong is a Research Scientist in the Computational Social Science group at Snap Research. His research focuses on graph machine learning, representation learning, anomaly detection, and user modeling. Prior to joining Snap full time, he worked as a research intern at Snap Research and Amazon Search, and received fellowships from both companies. He earned a PhD degree in Computer Science and Engineering from University of Notre Dame in 2022, advised by Professor Meng Jiang.</p>
     `,
