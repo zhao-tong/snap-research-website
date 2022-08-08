@@ -2264,6 +2264,18 @@ const publicationsList = [
     metadescription: ``,
     bgImage: "",
   },
+  {
+    id: 155,
+    date: "June 19, 2021",
+    title: "Seeing in Extra Darkness Using a Deep-red Flash",
+    description: `We design a new flash based on an interesting phenomenon of human visual system: human eyes become less sensitive to deep-red light when adapted to night vision.`,
+    authors: "Jinhui Xiong *, Jian Wang *, Wolfgang Heidrich, and Shree Nayar",
+    eventID: 114,
+    researchArea: "Computer Vision, Computational Imaging",
+    PDFLink: "https://jianwang-cmu.github.io/21redflash/CVPR21_DeepRedFlash.pdf",
+    metadescription: ``,
+    bgImage: "",
+  },
   // {
   //   id: 107,
   //   date: "",
