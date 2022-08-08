@@ -1880,6 +1880,14 @@ textarea {
   margin-bottom: 8px;
 }
 
+.team--nav-h4 {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 4px;
+}
+
 .team--detail img {
   max-width: 100%;
   border-radius: 9px;
