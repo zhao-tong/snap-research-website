@@ -176,8 +176,7 @@ const publicationsList = [
   {
     id: 2,
     date: "February 25, 2016",
-    title:
-      "Cross-modality consistent regression for joint visual-textual sentiment analysis of social multimedia",
+    title: "Cross-modality consistent regression for joint visual-textual sentiment analysis of social multimedia",
     description: `<p><b>Abstract: </b>Sentiment analysis of online user generated content is important for many social media analytics tasks. Researchers have largely relied on textual sentiment analysis to develop systems to predict political elections, measure economic indicators, and so on. Recently, social media users are increasingly using additional images and videos to express their opinions and share their experiences. Sentiment analysis of such large-scale textual and visual content can help better extract user sentiments toward events or topics. Motivated by the needs to leverage large-scale social multimedia content for sentiment analysis, we propose a cross-modality consistent regression (CCR) model, which is able to utilize both the state-of-the-art visual and textual sentiment analysis techniques. We first fine-tune a convolutional neural network (CNN) for image sentiment analysis and train a paragraph vector model for textual sentiment analysis. On top of them, we train our multi-modality regression model. We use sentimental queries to obtain half a million training samples from Getty Images. We have conducted extensive experiments on both machine weakly labeled and manually labeled image tweets. The results show that the proposed model can achieve better performance than the state-of-the art textual and visual sentiment analysis algorithms alone.</p>`,
     authors: "Quanzeng You, Jiebo Luo, Hailin Jin, Jianchao Yang",
     eventID: 2,
@@ -190,8 +189,7 @@ const publicationsList = [
   {
     id: 3,
     date: "May 09, 2016",
-    title:
-      "Building a large scale dataset for image emotion recognition: the fine print and the benchmark",
+    title: "Building a large scale dataset for image emotion recognition: the fine print and the benchmark",
     description: `<p><b>Abstract: </b></p><p>Psychological research results have confirmed that people can have different emotional reactions to different visual stimuli. Several papers have been published on the problem of visual emotion analysis. In particular, attempts have been made to analyze and predict people’s emotional reaction towards images. To this end, different kinds of hand-tuned features are proposed. The results reported on several carefully selected and labeled small image data sets have confirmed the promise of such features. While the recent successes of many computer vision related tasks are due to the adoption of Convolutional Neural Networks (CNNs), visual emotion analysis has not achieved the same level of success. This may be primarily due to the unavailability of confidently labeled and relatively large image data sets for visual emotion analysis. In this work, we introduce a new data set, which started from 3+ million weakly labeled images of different emotions and ended up 30 times as large as the current largest publicly available visual emotion data set. We hope that this data set encourages further research on visual emotion analysis. We also perform extensive benchmarking analyses on this large data set using the state of the art methods including CNNs.</p>`,
     authors: "Quanzeng You and Jiebo Luo, Hailin Jin, Jianchao Yang",
     eventID: 3,
@@ -204,8 +202,7 @@ const publicationsList = [
   {
     id: 4,
     date: "July 18, 2016",
-    title:
-      "Deep edge guided recurrent residual learning for image super-resolution",
+    title: "Deep edge guided recurrent residual learning for image super-resolution",
     description: `<p><b>Abstract:</b> In this work, we consider the image super-resolution (SR) problem. The main challenge of image SR is to recover high-frequency details of a low-resolution (LR) image that are important for human perception. To address this essentially ill-posed problem, we introduce a Deep Edge Guided REcurrent rEsidual (DEGREE) network to progressively recover the high-frequency details. Different from most of existing methods that aim at predicting high-resolution (HR) images directly, DEGREE investigates an alternative route to recover the difference between a pair of LR and HR images by recurrent residual learning. DEGREE further augments the SR process with edge-preserving capability, namely the LR image and its edge map can jointly infer the sharp edge details of the HR image during the recurrent recovery process. To speed up its training convergence rate, by-pass connections across multiple layers of DEGREE are constructed. In addition, we offer an understanding on DEGREE from the view-point of sub-band frequency decomposition on image signal and experimentally demonstrate how DEGREE can recover different frequency bands separately. Extensive experiments on three benchmark datasets clearly demonstrate the superiority of DEGREE over well-established baselines and DEGREE also provides new state-of-the-arts on these datasets.</p>`,
     authors:
       "Wenhan Yang, Jiashi Feng, Jianchao Yang, Fang Zhao, Jiaying Liu, Zongming Guo, Shuicheng Yan",
@@ -272,8 +269,7 @@ const publicationsList = [
   {
     id: 9,
     date: "April 12, 2017",
-    title:
-      "Deep Reinforcement Learning-based Image Captioning with Embedding Reward",
+    title: "Deep Reinforcement Learning-based Image Captioning with Embedding Reward",
     description: `<p><b>Abstract: </b>Image captioning is a challenging problem owing to the complexity in understanding the image content and diverse ways of describing it in natural language. Recent advances in deep neural networks have substantially improved the performance of this task. Most state-of-the-art approaches follow an encoder-decoder framework, which generates captions using a sequential recurrent prediction model. However, in this paper, we introduce a novel decision-making framework for image captioning. We utilize a “policy network” and a “value network” to collaboratively generate captions. The policy network serves as a local guidance by providing the confidence of predicting the next word according to the current state. Additionally, the value network serves as a global and lookahead guidance by evaluating all possible extensions of the current state. In essence, it adjusts the goal of predicting the correct words towards the goal of generating captions similar to the ground truth captions. We train both networks using an actor-critic reinforcement learning model, with a novel reward defined by visual-semantic embedding. Extensive experiments and analyses on the Microsoft COCO dataset show that the proposed framework outperforms state-ofthe art approaches across different evaluation metrics.</p>`,
     authors: "Zhou Ren, Xiaoyu Wang, Ning Zhang, Xutao Lv, Jia Li",
     eventID: 9,
@@ -341,8 +337,7 @@ const publicationsList = [
   {
     id: 14,
     date: "August 20, 2017",
-    title:
-      "Attention based CLDNNs for short-duration acoustic scene classification",
+    title: "Attention based CLDNNs for short-duration acoustic scene classification",
     description: `<p>Recently, neural networks with deep architecture have been widely applied to acoustic scene classification. Both Convolutional Neural Networks (CNNs) and Long Short-Term Memory Networks (LSTMs) have shown improvements over fully connected Deep Neural Networks (DNNs). Motivated by the fact that CNNs, LSTMs and DNNs are complimentary in their modeling capability, we apply the CLDNNs (Convolutional, Long Short-Term Memory, Deep Neural Networks) framework to short-duration acoustic scene classification in a unified architecture. The CLDNNs take advantage of frequency modeling with CNNs, temporal modeling with LSTM, and discriminative training with DNNs. Based on the CLDNN architecture, several novel attention-based mechanisms are proposed and applied on the LSTM layer to predict the importance of each time step. We evaluate the proposed method on the truncated version of the 2016 TUT acoustic scenes dataset which consists of recordings from 15 different scenes. By using CLDNNs with bidirectional LSTM, we achieve higher performance compared to the conventional neural network architectures. Moreover, by combining the attention-weighted output with LSTM final time step output, significant improvement can be further achieved.</p>`,
     authors: "Jinxi Buo, Ning Xu, Jia Li, Abeer Alwan",
     eventID: 14,
@@ -368,8 +363,7 @@ const publicationsList = [
   {
     id: 16,
     date: "September 05, 2017",
-    title:
-      "On the Sub-Optimality of Proximal Gradient Descent for L0 Sparse Approximation",
+    title: "On the Sub-Optimality of Proximal Gradient Descent for L0 Sparse Approximation",
     description: `<p><b>Abstract: </b></p><p>We study the proximal gradient descent (PGD) method for ℓ0 sparse approximation problem as well as its accelerated optimization with randomized algorithms in this paper. We first offer theoretical analysis of PGD showing the bounded gap between the sub-optimal solution by PGD and the globally optimal solution for the ℓ0 sparse approximation problem under conditions weaker than Restricted Isometry Property widely used in compressive sensing literature. Moreover, we propose randomized algorithms to accelerate the optimization by PGD using randomized low rank matrix approximation (PGD-RMA) and randomized dimension reduction (PGD-RDR). Our randomized algorithms substantially reduces the computation cost of the original PGD for the ℓ0 sparse approximation problem, and the resultant sub-optimal solution still enjoys provable suboptimality, namely, the sub-optimal solution to the reduced problem still has bounded gap to the globally optimal solution to the original problem.</p>`,
     authors: "Yingzhen Yang, Jianchao Yang, Wei Han, Thomas. S. Huang",
     eventID: 16,
@@ -410,8 +404,7 @@ const publicationsList = [
   {
     id: 19,
     date: "November 30, 2017",
-    title:
-      "Hybrid-VAE: Improving Deep Generative Models by Partial Observations",
+    title: "Hybrid-VAE: Improving Deep Generative Models by Partial Observations",
     description: `<p><b>Abstract: </b>Deep neural network models trained on large labeled datasets are the state-of-theart in a large variety of computer vision tasks. In many applications, however, labeled data is expensive to obtain or requires a time consuming manual annotation process. In contrast, unlabeled data is often abundant and available in large quantities. We present a principled framework to capitalize on unlabeled data by training deep generative models on both labeled and unlabeled data. We show that such a combination is beneficial because the unlabeled data acts as a data-driven form of regularization, allowing generative models trained on few labeled samples to reach the performance of fully-supervised generative models trained on much larger datasets. We call our method Hybrid VAE (H-VAE) as it contains both the generative and the discriminative parts. We validate H-VAE on three large-scale datasets of different modalities: two face datasets: (MultiPIE, CelebA) and a hand pose dataset (NYU Hand Pose). Our qualitative visualizations further support improvements achieved by using partial observations.</p>`,
     authors: "Sergey Tulyakov, Andrew Fitzgibbon, Sebastian Nowozin",
     eventID: 19,
@@ -424,8 +417,7 @@ const publicationsList = [
   {
     id: 20,
     date: "December 04, 2017",
-    title:
-      "A Graph Theory Approach To QP Problem Reformulation: An Example With SVM",
+    title: "A Graph Theory Approach To QP Problem Reformulation: An Example With SVM",
     description: `<p>Quadratic programming (QP) problem reformulations have been studied for decades
     [Sherali and Tuncbilek(1995), Nemirovski and Shapiro(2006), Anstreicher(2009)],
     [Zheng et al.(2012)Zheng, Sun, Li, and Cui, Wu and Jiang(2017)], but rarely linked to
@@ -566,8 +558,7 @@ const publicationsList = [
   {
     id: 29,
     date: "April 11, 2018",
-    title:
-      "Action Recognition with Spatio-Temporal Visual Attention on Skeleton Image Sequences",
+    title: "Action Recognition with Spatio-Temporal Visual Attention on Skeleton Image Sequences",
     description: `<p><b>Abstract: </b>Action recognition with 3D skeleton sequences is becoming popular due to its speed and robustness. The recently proposed Convolutional Neural Networks (CNN) based methods have shown good performance in learning spatio-temporal representations for skeleton sequences. Despite the good recognition accuracy achieved by previous CNN based methods, there exist two problems that potentially limit the performance. First, previous skeleton representations are generated by chaining joints with a fixed order. The corresponding semantic meaning is unclear and the structural information among the joints is lost. Second, previous models do not have an ability to focus on informative joints. The attention mechanism is important for skeleton based action recognition because there exist spatio-temporal key stages while the joint predictions can be inaccurate. To solve these two problems, we propose a novel CNN based method for skeleton based action recognition. We first redesign the skeleton representations with a depth-first tree traversal order, which enhances the semantic meaning of skeleton images and better preserves the associated structural information. We then propose the idea of a two-branch attention architecture that focuses on spatio-temporal key stages and filters out unreliable joint predictions. A base attention model with the simplest structure is first introduced to illustrate the two-branch attention architecture. By improving the structures in both branches, we further propose a Global Longsequence Attention Network (GLAN). Furthermore, in order to adjust the kernel’s spatio-temporal aspect ratios and better capture long term dependencies, we propose a Sub-Sequence Attention Network (SSAN) that takes sub-image sequences as inputs. We show that the two-branch attention architecture can be combined with the SSAN to further improve the performance. Our experiment results on the NTU RGB+D dataset and the SBU Kinetic Interaction dataset outperforms the state-of-the-art. The model is further validated on noisy estimated poses from the UCF101 dataset and the Kinetics dataset. </p><p><i>Index Terms—Action and Activity Recognition, Video Understanding, Human Analysis, Visual Attention.</i></p>`,
     authors: "Zhengyuan Yang, Yuncheng Li, Jianchao Yang, Jiebo Luo",
     eventID: 29,
@@ -593,8 +584,7 @@ const publicationsList = [
   {
     id: 31,
     date: "April 17, 2018",
-    title:
-      "Sequential Minimal Optimization Extended to General Quadratic Programming",
+    title: "Sequential Minimal Optimization Extended to General Quadratic Programming",
     description: `<p><b>Abstract:</b> Nearly two decades ago Platt introduced the sequential minimal optimization (SMO) algorithm to solve the Support Vector Machine (SVM) dual quadratic programming optimization problem. SMO belongs to the family of Sequential Quadratic Programming (SQP) algorithms, and specifically aims to reduce the quadratic programming (QP) problem to its minimum at every iteration. As a result, SQP can be solved analytically and leads to an algorithm with linear time and space complexity. In 2005, Fan et al. summarized most of the optimization strategies that can be applied to solve the SVM QP problem with SMO in the well known LIBSVM library. Presently, other QP problems with similar form as the SVM QP dual problem are solved using more time and space consuming algorithms than mobile computational requirements allow. This research strives to discern the conditions that allow SMO to be extended to other QP problems and its complexity of solving the minimal QP at each iteration.</p><p><b><i>Index Terms: </i></b><i>Quadratic optimization, Support vector machines, Natural language processing</i></p>`,
     authors: "William Brendel, Luis Marujo",
     eventID: 30,
@@ -620,8 +610,7 @@ const publicationsList = [
   {
     id: 33,
     date: "April 22, 2018",
-    title:
-      "Practical Privacy-Preserving Friend Recommendations on Social Networks",
+    title: "Practical Privacy-Preserving Friend Recommendations on Social Networks",
     description: `<p><b>Abstract: </b>Friend recommendations, whose goal is to expand the connections between users and increase their engagement on the network, is an essential problem for social networks. A particular challenge in friend recommendations is in making recommendations in a cold-start situation. This situation occurs when a new user has just registered and, as result, the model does not yet have sufficient information to directly provide recommendations. Friend recommendations also raise privacy concerns, as they may leak friendship relationships between people on the social network. Knowledge of such relationships may reveal sensitive information about a user, namely their political or sexual preferences [14], medical issues [8], or even de-anonymize their anonymous identities [6, 9]. The easiest and most common way to learn people’s relationships is through a brute-force attack that creates fake identities on the graph, connects them to the target user, and then observes friend recommendations that are based on the target user’s friends, and therefore, leak their social graph [2, 6]. As more users access social networks through their mobile phones, their phone contact books represent a valuable source of information for bootstrapping the recommendations in the coldstart situation. Our main contribution is to propose that the phone contact book can also be used to better protect the privacy of the users’ friend graphs when making friend recommendations, describe a straw-man approach for doing so, and measure its impact on recommendation quality through experiments.</p>`,
     authors:
       "William Brendel, Fangqiu Han, Luis Marujo, Luo Jie, Aleksandra Korolova",
@@ -648,8 +637,7 @@ const publicationsList = [
   {
     id: 35,
     date: "April 24, 2018",
-    title:
-      "Semi-supervised Content-based Detection of Misinformation via Tensor Embeddings",
+    title: "Semi-supervised Content-based Detection of Misinformation via Tensor Embeddings",
     description: `<p><b>Abstract:</b> Fake news may be intentionally created to promote economic, political and social interests, and can lead to negative impacts on humans beliefs and decisions. Hence, detection of fake news is an emerging problem that has become extremely
     prevalent during the last few years. Most existing works on this topic focus on manual feature extraction and supervised classification models leveraging a large number of labeled (fake or real) articles. In contrast, we focus on content-based detection of fake news articles, while assuming that we have a small amount of labels, made available by manual fact-checkers or automated sources. We argue this is a more realistic setting in the presence of massive amounts of content, most of which cannot be easily factchecked. To that end, we represent collections of news articles as multi- dimensional tensors, leverage tensor decomposition to derive concise article embeddings that capture spatial/contextual information about each news article, and use those embeddings to create an article-by-article graph on which we propagate limited labels. Results on three real-world datasets show that our method performs on par or better than existing models that are fully supervised, in that we achieve better detection accuracy using fewer labels. In particular, our proposed method achieves 75.43% of accuracy using only 30% of labels of a public dataset while an SVM-based classifier achieved 67.43%. Furthermore, our method achieves 70.92% of accuracy in a large dataset using only 2% of labels.</p>`,
     authors:
@@ -707,8 +695,7 @@ const publicationsList = [
   {
     id: 39,
     date: "May 02, 2018",
-    title:
-      "Exploring Emoji Usage and Prediction Through a Temporal Variation Lens",
+    title: "Exploring Emoji Usage and Prediction Through a Temporal Variation Lens",
     description: `<p><b>Abstract: </b>The frequent use of Emojis on social media platforms has created a new form of multimodal social interaction. Developing methods for the study and representation of emoji semantics helps to improve future multimodal communication systems. In this paper we explore the usage and semantics of emojis over time. We compare emoji embeddings trained on a corpus of different seasons and show that
     some emojis are used differently depending on the time of the year. Moreover, we propose a method to take into account the time information for emoji prediction systems, outperforming state-of-the-art systems. We show that, using the time information, the accuracy of some emojis can be significantly improved.</p>`,
     authors:
@@ -724,8 +711,7 @@ const publicationsList = [
   {
     id: 40,
     date: "May 06, 2018",
-    title:
-      "I Know You’ll Be Back: Interpretable New User Clustering and Churn Prediction on a Mobile Social Application",
+    title: "I Know You’ll Be Back: Interpretable New User Clustering and Churn Prediction on a Mobile Social Application",
     description: `<p><b>Abstract:  </b>As online platforms are striving to get more users, a critical challenge is user churn, which is especially concerning for new users. In this paper, by taking the anonymous large-scale real-world data from Snapchat as an example, we develop <i>ClusChurn</i>, a systematic two-step framework for interpretable new user clustering and churn prediction, based on the intuition that proper user clustering can help understand and predict user churn. Therefore, <i>ClusChurn</i> firstly groups new users into interpretable typical clusters, based on their activities on the platform and ego-network structures. Then we design a novel deep learning pipeline based on LSTM and attention to accurately predict user churn with very limited initial behavior data, by leveraging the correlations among users’ multidimensional activities and the underlying user types. <i>ClusChurn</i> is also able to predict user types, which enables rapid reactions to different types of user churn. Extensive data analysis and experiments show that <i>ClusChurn</i> provides valuable insight into user behaviors, and achieves state-of-the-art churn prediction performance. The whole framework is deployed as a data analysis pipeline, delivering real-time data analysis and prediction results to multiple relevant teams for business intelligence uses. It is also general enough to be readily adopted by any online systems with user behavior data.</p>`,
     authors: "Carl Yang, Xiaolin Shi, Jie Luo, Jiawei Han",
     eventID: 40,
@@ -780,8 +766,7 @@ const publicationsList = [
   {
     id: 44,
     date: "June 03, 2018",
-    title:
-      "Filter sampling and combination CNN (FSC-CNN): a compact CNN model for small-footprint ASR acoustic modeling using raw waveforms",
+    title: "Filter sampling and combination CNN (FSC-CNN): a compact CNN model for small-footprint ASR acoustic modeling using raw waveforms",
     description: `<p><b>Abstract: </b>Learning an ASR acoustic model directly from raw waveforms using CNNs has proved to be effective, where convolutional layers with learnable filters are able to automatically extract useful features. However, these filters, with independent parameters, can be highly redundant resulting in inefficient systems. In this paper, we propose a novel method to generate CNN filter parameters by first sampling from a low-dimensional parameter space and then using a trainable scalar vector to perform a linear combination. This filter sampling and combination method (denoted as FSC) not only naturally enforces parameter sharing in the low-dimensional sampling space, but also adds to the learning capacity of filters. The FSC-CNN model has a significantly smaller number of parameters and is more efficient compared to conventional CNN models, which makes it feasible for small-footprint ASR. Experimental results on the WSJ LVCSR task show that FSC-CNNs are able to achieve a WER of 3.67 with a standard decoder set-up with only 1.19M nonlinearlayer parameters (better than a strong baseline CNN model with 3.2x more parameters). It also outperforms a CNN model with a similar number of parameters by a relative improvement of 10.26%.</p><p><b><i>Index Terms</i></b><i>: speech recognition, small-footprint, acoustic modeling, raw audio, filter sampling and combination, CNNs</i></p>`,
     authors: "Jinxi Guo, Ning Xu, Xin Chen, Yang Shi, Kaiyuan Xu, Abeer Alwan",
     eventID: 44,
@@ -794,8 +779,7 @@ const publicationsList = [
   {
     id: 45,
     date: "June 10, 2018",
-    title:
-      "Zeroshot Multimodal Named Entity Disambiguation for Noisy Social Media Posts",
+    title: "Zeroshot Multimodal Named Entity Disambiguation for Noisy Social Media Posts",
     description: `<p><b>Abstract: </b>We introduce the new Multimodal Named Entity Disambiguation (MNED) task for multimodal social media posts such as Snapchat or Instagram captions, which are composed of short captions with accompanying images. Social media posts bring significant challenges for disambiguation tasks because 1) ambiguity not only comes from polysemous entities, but also from inconsistent or incomplete notations, 2) very limited context is provided with surrounding words, and 3) there are many emerging entities often unseen during training. To this end, we build a new dataset called SnapCaptionsKB, a collection of Snapchat image captions submitted to public and crowd-sourced stories, with named entity mentions fully annotated and linked to entities in an external knowledge base. We then build a deep zeroshot multimodal network for MNED that 1) extracts contexts from both text and image, and 2) predicts correct entity in the knowledge graph embeddings space, allowing for zeroshot disambiguation of entities unseen in training set as well. The proposed model significantly outperforms the stateof-the-art text-only NED models, showing efficacy and potentials of the MNED task.</p>`,
     authors: "Seungwhan Moon, Leonardo Neves, Vitor Carvalho",
     eventID: 45,
@@ -822,8 +806,7 @@ const publicationsList = [
   {
     id: 47,
     date: "July 03, 2018",
-    title:
-      "Multi-view to Novel view: Synthesizing novel views with Self-Learned Confidence",
+    title: "Multi-view to Novel view: Synthesizing novel views with Self-Learned Confidence",
     description: `<p><b>Abstract:</b> In this paper, we address the task of multi-view novel view synthesis, where we are interested in synthesizing a target image with an arbitrary camera pose from given source images. We propose an endto-end trainable framework that learns to exploit multiple viewpoints to synthesize a novel view without any 3D supervision. Specifically, our model consists of a flow prediction module and a pixel generation module to directly leverage information presented in source views as well as hallucinate missing pixels from statistical priors. To merge the predictions produced by the two modules given multi-view source images, we introduce a self-learned confidence aggregation mechanism. We evaluate our model on images rendered from 3D object models as well as real and synthesized scenes. We demonstrate that our model is able to achieve state-of-the-art results as well as progressively improve its predictions when more source images are available.</p><p>
     <i><b>Keywords: </b></i><i>Novel view synthesis, multi-view novel view synthesis</i></p>`,
     authors:
@@ -838,8 +821,7 @@ const publicationsList = [
   {
     id: 48,
     date: "July 03, 2018",
-    title:
-      "Deep Volumetric Video From Very Sparse Multi-View Performance Capture",
+    title: "Deep Volumetric Video From Very Sparse Multi-View Performance Capture",
     description: `<p><b>Abstract:</b> We present a deep learning based volumetric approach for performance capture using a passive and highly sparse multi-view capture system. State-of-the-art performance capture systems require either prescanned actors, large number of cameras or active sensors. In this work, we focus on the task of template-free, per-frame 3D surface reconstruction from as few as three RGB sensors, for which conventional visual hull or multi-view stereo methods fail to generate plausible results. We introduce a novel multi-view Convolutional Neural Network (CNN) that maps 2D
     images to a 3D volumetric field and we use this field to encode the probabilistic distribution of surface points of the captured subject. By querying the resulting field, we can instantiate the clothed human body at arbitrary resolutions. Our approach scales to different numbers of input images, which yield increased reconstruction quality when more views are used. Although only trained on synthetic data, our network can generalize to handle real footage from body performance capture. Our method is suitable for high-quality low-cost full body volumetric capture solutions, which are gaining popularity for VR and AR content creation. Experimental results demonstrate that our method is significantly more robust and accurate than existing techniques when only very sparse views are available.</p>`,
     authors:
@@ -854,8 +836,7 @@ const publicationsList = [
   {
     id: 49,
     date: "July 08, 2018",
-    title:
-      "Attention-based Multi-Patch Aggregation for Image Aesthetic Assessment",
+    title: "Attention-based Multi-Patch Aggregation for Image Aesthetic Assessment",
     description: `<p><b>Abstract:</b> Aggregation structures with explicit information, such as image attributes and scene semantics, are effective and popular for intelligent systems for assessing aesthetics of visual data. However, useful information may not be available due to the high cost of manual annotation and expert design. In this paper, we present a
     novel multi-patch (MP) aggregation method for image aesthetic assessment. Different from state-of-the-art methods, which augment an MP aggregation network with various visual attributes, we train the model in an end-to-end manner with aesthetic labels only (i.e., aesthetically positive or negative). We achieve the goal by resorting to an attention-based mechanism that adaptively adjusts the weight of each patch during the training process to improve learning efficiency. In addition, we propose a set of objectives with three typical attention mechanisms (i.e., average, minimum, and adaptive) and evaluate their effectiveness on the Aesthetic Visual Analysis (AVA) benchmark. Numerical results show that our approach outperforms existing methods by a large margin. We further verify the effectiveness of the proposed attention-based
     objectives via ablation studies and shed light on the design of aesthetic assessment systems.</p>`,
@@ -885,8 +866,7 @@ const publicationsList = [
   {
     id: 51,
     date: "July 22, 2018",
-    title:
-      "Monocular Depth Estimation via Deep Structured Models with Ordinal Constraints",
+    title: "Monocular Depth Estimation via Deep Structured Models with Ordinal Constraints",
     description: `<p><b>Abstract:</b> User interaction provides useful information for solving challenging computer vision problems in practice. In this paper, we show that a very limited number of user clicks could greatly boost monocular depth estimation performance and overcome monocular ambiguities. We formulate this task as a deep structured model, in which the structured pixelwise depth estimation has ordinal constraints introduced
     by user clicks. We show that the inference of the proposed model could be efficiently solved through a feed-forward network. We demonstrate the effectiveness of the proposed model on NYU Depth V2 and Stanford 2D-3D datasets. On both datasets, we achieve state-of-the-art performance when encoding user interaction into our deep models.</p>`,
     authors:
@@ -927,8 +907,7 @@ const publicationsList = [
   {
     id: 54,
     date: "July 26, 2018",
-    title:
-      "Unsupervised Domain Adaptation for 3D Keypoint Estimation via View Consistency",
+    title: "Unsupervised Domain Adaptation for 3D Keypoint Estimation via View Consistency",
     description: `<p><b>Abstract:</b> In this paper, we introduce a novel unsupervised domain adaptation technique for the task of 3D keypoint prediction from a single depth scan or image. Our key idea is to utilize the fact that predictions from different views of the same or similar objects should be consistent with each other. Such view consistency can provide effective regularization for keypoint prediction on unlabeled instances. In addition, we introduce a geometric alignment term to regularize predictions in the target domain. The resulting loss function can be effectively optimized via alternating minimization. We demonstrate the effectiveness of our approach on real datasets and present experimental results showing that our approach is superior to state-of-the-art general-purpose domain adaptation techniques.</p><p>
     <i><b>Keywords:</b></i><i> 3D Keypoint Estimation, Multi-View Consistency, Domain Adaptation, Unsupervised Learning</i></p>`,
     authors: "Xingyi Zhou, Arjun Karpur, Chuang Gan, Linjie Luo, Qixing Huang",
@@ -942,8 +921,7 @@ const publicationsList = [
   {
     id: 55,
     date: "August 01, 2018",
-    title:
-      "Did We Get It Right? Predicting Query Performance in E-Commerce Search",
+    title: "Did We Get It Right? Predicting Query Performance in E-Commerce Search",
     description: `<p><b>Abstract</b>: In this paper, we address the problem of evaluating whether results
     served by an e-commerce search engine for a query are good or not. This is a critical question in evaluating any e-commerce search engine. While this question is traditionally answered using simple metrics like query click-through rate (CTR), we observe that in ecommerce search, such metrics can be misleading. Upon inspection, we find cases where CTR is high but the results are poor and vice versa. Similar cases exist for other metrics like time to click which are often also used for evaluating search engines.</p><p>We aim to learn the quality of the results served by the search engine based on users’ interactions with the results. Although this problem has been studied in the web search context, this is the first study for e-commerce search, to the best of our knowledge. Despite certain commonalities with evaluating web search engines, there are several major differences such as underlying reasons for search failure, and availability of rich user interaction data with products (e.g. adding a product to the cart). We study largescale user interaction logs from Flipkart’s search engine, analyze behavioral patterns and build models to classify queries based on user behavior signals. We demonstrate the feasibility and efficacy of such models in accurately predicting query performance. Our classifier is able to achieve an average AUC of 0.75 on a held-out
     test set.</p>`,
@@ -958,8 +936,7 @@ const publicationsList = [
   {
     id: 56,
     date: "August 01, 2018",
-    title:
-      "The rippling dynamics of valenced messages in naturalistic youth chat",
+    title: "The rippling dynamics of valenced messages in naturalistic youth chat",
     description: `<p><b>Abstract:</b> Even though human behavior is largely driven by real-time feedback from others, this social complexity is underrepresented in psychological theory, largely because it is so difficult to isolate. In this work, we performed a quasi-experimental analysis of hundreds of millions of chat room messages between young people. This allowed us to reconstruct how—and on what timeline—the valence of one message affects the valence of subsequent messages by others. For the highly emotionally valenced chat messages that we focused on, we found that these messages elicited a general increase of 0.1 to 0.4 messages per minute. This influence started 2 s after the original message and continued out to 60 s. Expanding our focus to include feedback loops—the way a speaker’s chat comes back to affect him or her—we found that the stimulating effects of these same chat events started rippling back from others 8 s after the original message, to cause an increase in the speaker’s chat that persisted for up to 8 min. This feedback accounted for at least 1% of the bulk of chat. Additionally, a message’s valence affects its dynamics, with negative events feeding back more slowly and continuing to affect the speaker longer. By reconstructing the second-by-second dynamics of many psychosocial processes in aggregate, we captured the timescales at which they collectively ripple through a social system to drive system-level outcomes.</p>`,
     authors:
       "Seth Frey, Karsten Donnay, Dirk Helbing, Robert W. Sumner, Maarten Bos",
@@ -973,8 +950,7 @@ const publicationsList = [
   {
     id: 57,
     date: "August 10, 2018",
-    title:
-      "Improving Multi-label Emotion Classification via Sentiment Classification with Dual Attention Transfer Network",
+    title: "Improving Multi-label Emotion Classification via Sentiment Classification with Dual Attention Transfer Network",
     description: `<p><b>Abstract:</b> In this paper, we target at improving the performance of multi-label emotion classification with the help of sentiment classification. Specifically, we propose a new transfer learning architecture to divide the sentence representation into two different feature spaces, which are expected to respectively capture the general sentiment words and the other important emotion-specific words via a dual attention mechanism. Extensive experimental results demonstrate that our transfer learning approach can outperform several strong baselines and achieve the state-of-the-art performance on two benchmark datasets.</p>`,
     authors:
       "Jianfei Yu, Luis Marujo, Jing Jiang, Pradeep Karuturi, William Brendel",
@@ -988,8 +964,7 @@ const publicationsList = [
   {
     id: 58,
     date: "August 14, 2018",
-    title:
-      "False Discovery Rate Controlled Heterogeneous Treatment Effect Detection for Online Controlled Experiments",
+    title: "False Discovery Rate Controlled Heterogeneous Treatment Effect Detection for Online Controlled Experiments",
     description: `<p><b>Abstract: 
     </b>Online controlled experiments (a.k.a. A/B testing) have been used as the mantra for data-driven decision making on feature changing and product shipping in many Internet companies. However, it is still a great challenge to systematically measure how every code or feature change impacts millions of users with great heterogeneit (e.g. countries, ages, devices). The most commonly used A/B testing framework in many companies is based on Average Treatment Effect (ATE), which cannot detect the heterogeneity of treatment effect on users with different characteristics. In this paper, we propose statistical methods that can systematically and accurately identify Heterogeneous Treatment Effect (HTE) of any user cohort of interest (e.g. mobile device type, country), and determine which factors (e.g. age, gender) of users contribute to the heterogeneity of the treatment effect in an A/B test. By applying these methods on both simulation data and real-world experimentation data, we show how they work robustly with controlled low False Discover Rate (FDR), and at the same time, provides us with useful insights about the heterogeneity of identified user groups. We have deployed a toolkit based on these methods, and have used it to measure the Heterogeneous Treatment Effect of many A/B tests at Snap.</p><p><b><i>Keywords</i></b><i>:A/B testing, multiple testing, Heterogeneous Treatment Effect, False Discovery Rate</i></p>`,
     authors: "Yuxiang Xie, Nanyu Chen, Xiaolin Shi",
@@ -1017,8 +992,7 @@ const publicationsList = [
   {
     id: 60,
     date: "August 30, 2018",
-    title:
-      "Stabilized Real-time Face Tracking via a Learned Dynamic Rigidity Prior",
+    title: "Stabilized Real-time Face Tracking via a Learned Dynamic Rigidity Prior",
     description: `<p><b>Abstract: </b>Despite the popularity of real-time monocular face tracking systems in many successful applications, one overlooked problem with these systems is rigid instability. It occurs when the input facial motion can be explained by either head pose change or facial expression change, creating ambiguities that often lead to jittery and unstable rigid head poses under large expressions. Existing rigid stabilization methods either employ a heavy anatomically-motivated approach that are unsuitable for real-time applications, or utilize heuristicbased rules that can be problematic under certain expressions. We propose the first rigid stabilization method for real-time monocular face tracking using a dynamic rigidity prior learned from realistic datasets. The prior is defined on a region-based face model and provides dynamic region-based adaptivity for rigid pose optimization during real-time performance. We introduce an effective offline training scheme to learn the dynamic rigidity prior by optimizing the convergence of the rigid pose optimization to the ground-truth poses in the training data. Our real-time face tracking system is an optimization framework that alternates between rigid pose optimization and expression optimization. To ensure tracking accuracy, we combine both robust, drift-free facial landmarks and dense optical flow into the optimization objectives. We evaluate our system extensively against state-of-the-art monocular face tracking systems and achieve significant improvement in tracking accuracy on the high-quality face tracking benchmark. Our system can improve facial-performance-based applications such as facial animation retargeting and virtual face makeup with accurate expression and stable pose. We further validate the dynamic rigidity prior by comparing it against
     other variants on the tracking accuracy.</p>`,
     authors: "Chen Cao, Menglei Chai, Oliver Woodford, Linjie Luo",
@@ -1071,8 +1045,7 @@ const publicationsList = [
   {
     id: 64,
     date: "September 05, 2018",
-    title:
-      "MixLasso: Generalized Mixed Regression via Convex Atomic-Norm Regularization",
+    title: "MixLasso: Generalized Mixed Regression via Convex Atomic-Norm Regularization",
     description: `<p><b>Abstract:</b> We consider a generalization of mixed regression where the response is an additive combination of several mixture components. Standard mixed regression is a special case where each response is generated from exactly one component. Typical
     approaches to the mixture regression problem employ local search methods such as Expectation Maximization (EM) that are prone to spurious local optima. On the other hand, a number of recent theoretically-motivated Tensor-based methods either have high sample complexity, or require the knowledge of the input distribution, which is not available in most of practical situations. In this work, we study a novel convex estimator MixLasso for the estimation of generalized mixed regression, based on an atomic norm specifically constructed to regularize the number of
     mixture components. Our algorithm gives a risk bound that trades off between prediction accuracy and model sparsity without imposing stringent assumptions on the input/output distribution, and can be easily adapted to the case of non-linear functions. In our numerical experiments on mixtures of linear as well as nonlinear regressions, the proposed method yields high-quality solutions in a wider range of settings than existing approaches.</p>`,
@@ -1087,8 +1060,7 @@ const publicationsList = [
   {
     id: 65,
     date: "December 04, 2018",
-    title:
-      "Gourmet photography dataset for aesthetic assessment of food images",
+    title: "Gourmet photography dataset for aesthetic assessment of food images",
     description: `<p><b>Abstract:  </b>In this study, we present the Gourmet Photography Dataset (GPD), which is the first large-scale dataset for aesthetic assessment of food photographs. We collect 12,000 food images together with human-annotated labels (i.e., aesthetically positive or negative) to build this dataset. We evaluate the performance of several popular machine learning algorithms for aesthetic assessment of food images to verify the effectiveness and importance of our GPD dataset. Experimental results show that deep convolutional neural networks trained on GPD can achieve comparable performance with human experts in this task, even on unseen food photographs. Our experiments also provide insights to support further study and applications related to visual analysis of food images.</p>`,
     authors:
       "Kekai Sheng, Weiming Dong, Haibin Huang, Chongyang Ma, Bao-Gang Hu",
@@ -1143,8 +1115,7 @@ const publicationsList = [
   {
     id: 69,
     date: "March 01, 2019",
-    title:
-      "Animo: Sharing Biosignals on a Smartwatch for Lightweight Social Connection",
+    title: "Animo: Sharing Biosignals on a Smartwatch for Lightweight Social Connection",
     description: `<p><b>Abstract: </b>We present <i>Animo</i>, a smartwatch app that enables people to share and view each other’s biosignals. We designed and engineered Animo to explore new ground for smartwatch-based biosignals social computing systems: identifying opportunities where these systems can support lightweight and mood-centric interactions. In our work we develop, explore, and evaluate several innovative features designed for dyadic communication of heart rate. We discuss the results of a two-week study (N=34), including new communication patterns participants engaged in, and outline the design landscape for communicating with biosignals on smartwatches.</p>`,
     authors:
       "Fannie Liu, Mario Esparza, Maria Pavlovskaia, Geoff Kaufman, Laura Dabbish, Andrés Monroy-Hernández",
@@ -1185,8 +1156,7 @@ const publicationsList = [
   {
     id: 72,
     date: "April 04, 2019",
-    title:
-      "Train One Get One Free: Partially Supervised Neural Network for Bug Report Duplicate Detection and Clustering",
+    title: "Train One Get One Free: Partially Supervised Neural Network for Bug Report Duplicate Detection and Clustering",
     description: `<p><b>Abstract: </b>Tracking user reported bugs requires considerable engineering effort in going through many repetitive reports and assigning them to the correct teams. This paper proposes a neural architecture that can jointly (1) detect if two bug reports are duplicates, and (2) aggregate them into latent topics. Leveraging the assumption that learning the topic of a bug is a sub-task for detecting duplicates, we design a loss function that can jointly perform both tasks but needs supervision for only duplicate classification, achieving topic clustering in an unsupervised fashion. We use a two-step attention module that uses self-attention for topic clustering and conditional attention for duplicate detection. We study the characteristics of two types of real world datasets that have been marked for duplicate bugs by engineers and by nontechnical annotators. The results demonstrate that our model not only can outperform stateof-the-art methods for duplicate classification on both cases, but can also learn meaningful latent clusters without additional supervision.</p>`,
     authors:
       "Lahari Poddar, Leonardo Neves, William Brendel, Luis Marujo, Sergey Tulyakov, Pradeep Karuturi",
@@ -1228,8 +1198,7 @@ const publicationsList = [
   {
     id: 75,
     date: "June 02, 2019",
-    title:
-      "Characterizing and Forecasting User Engagement with In-app Action Graph: A Case Study of Snapchat",
+    title: "Characterizing and Forecasting User Engagement with In-app Action Graph: A Case Study of Snapchat",
     description: `<p><b>Abstract: </b>While mobile social apps have become increasingly important in people’s daily life, we have limited understanding on what motivates users to engage with these apps. In this paper, we answer the question whether users’ in-app activity patterns help inform their future app engagement (e.g., active days in a future time window)? Previous studies on predicting user app engagement mainly focus on various macroscopic features (e.g., time-series of activity frequency), while ignoring fine-grained inter-dependencies between different in-app actions at the microscopic level. Here we propose to formalize individual user’s in-app action transition patterns as a temporally evolving action graph, and analyze its characteristics in terms of informing future user engagement. Our analysis suggested that action graphs are able to characterize user behavior patterns and inform future engagement. We derive a number of high-order graph features to capture in-app usage patterns and construct interpretable models for predicting trends of engagement changes and active rates. To further enhance predictive power, we design an end-to-end, multi-channel neural model to encode temporal action graphs, activity sequences, and other macroscopic features. Experiments on predicting user engagement for 150k Snapchat new users over a 28-day period demonstrate the effectiveness of the proposed models. The prediction framework is deployed at Snapchat to deliver real world business insights. Our proposed framework is also general and can be applied to other social app platforms.</p>`,
     authors: "Yozen Liu, Xiaolin Shi, Lucas Pierce, Xiang Ren",
     eventID: 75,
@@ -1318,8 +1287,7 @@ const publicationsList = [
   {
     id: 81,
     date: "August 21, 2019",
-    title:
-      "SliceNDice: Mining Suspicious Multi-attribute Entity Groups with Multi-view Graphs",
+    title: "SliceNDice: Mining Suspicious Multi-attribute Entity Groups with Multi-view Graphs",
     description: `<p><b>Abstract: </b>Given the reach of web platforms, bad actors have considerable incentives to manipulate and defraud users at the expense of platform integrity. This has spurred research in numerous suspicious behavior detection tasks, including detection
     of sybil accounts, false information, and payment scams/fraud. In this paper, we draw the insight that many such initiatives can be tackled in a common framework by posing a detection task which seeks to find groups of entities which share too many properties with one another across multiple attributes (sybil accounts created at the same time and location, propaganda spreaders broadcasting articles with the same rhetoric and with similar reshares, etc.) Our work makes four core contributions: Firstly, we posit a novel formulation of this task as a multi-view graph mining problem, in which distinct views reflect distinct attribute similarities across entities, and contextual similarity and attribute importance are respected. Secondly, we propose a novel suspiciousness metric for scoring entity groups given the abnormality of their synchronicity across multiple views, which obeys intuitive desiderata that existing metrics do not. Finally, we propose the SLICENDICE algorithm which enables efficient extraction of highly suspicious entity groups, and demonstrate its practicality in production, in terms of strong detection performance and discoveries on Snapchat’s large advertiser ecosystem (89% precision and numerous discoveries of real fraud rings), marked outperformance of baselines (over 97% precision/recall in simulated settings) and linear scalability.</p><p><i><b>Index Terms:</b></i><i> anomaly detection, attributed data, multi-view graphs, outlier</i></p>`,
     authors: "Hamed Nilforoshan, Neil Shah",
@@ -1389,8 +1357,7 @@ const publicationsList = [
   {
     id: 86,
     date: "November 07, 2019",
-    title:
-      "Learning to Annotate: Modularizing Data Augmentation for Text Classifiers with Natural Language Explanations",
+    title: "Learning to Annotate: Modularizing Data Augmentation for Text Classifiers with Natural Language Explanations",
     description: `<p><b>Abstract</b>: Deep neural networks usually require massive labeled data, which restricts their applications in scenarios where data annotation is expensive. Natural language (NL) explanations have been demonstrated very useful additional supervision, which can provide sufficient domain knowledge for generating more labeled data over new instances, while the annotation time only doubles. However, directly applying them for augmenting model learning encounters two challenges: (1) NL explanations are unstructured and inherently compositional. (2) NL explanations often have large numbers of linguistic variants, resulting in low recall and limited generalization ability. In this paper, we propose a novel Neural EXecution Tree (NEXT) framework to augment training data for text classification using NL explanations. After transforming NL explanations into executable logical forms by semantic parsing, NEXT generalizes different types of actions specified by the logical forms for labeling data instances, which substantially increases the coverage of each NL explanation. Experiments on two NLP tasks (relation extraction and sentiment analysis) demonstrate its superiority over baseline methods. Its extension to multi-hop question answering achieves performance gain with light annotation effort.</p>`,
     authors:
       "Ziqi Wang, Yujia Qin, Wenxuan Zhou, Jun Yan, Qinyuan Ye, Leonardo Neves, Zhiyuan Liu, Xiang Ren",
@@ -1404,8 +1371,7 @@ const publicationsList = [
   {
     id: 87,
     date: "January 15, 2020",
-    title:
-      "NERO: A Neural Rule Grounding Framework for Label-Efficient Relation Extraction",
+    title: "NERO: A Neural Rule Grounding Framework for Label-Efficient Relation Extraction",
     description: ``,
     authors:
       "Wenxuan Zhou, Hongtao Lin, Bill Yuchen Lin, Ziqi Wang, Junyi Du, Leonardo Neves, Xiang Ren",
@@ -1418,8 +1384,7 @@ const publicationsList = [
   {
     id: 88,
     date: "February 07, 2020",
-    title:
-      "Revisiting Image Aesthetic Assessment via Self-Supervised Feature Learning",
+    title: "Revisiting Image Aesthetic Assessment via Self-Supervised Feature Learning",
     description: `<p><b>Abstract:</b>
     Visual aesthetic assessment has been an active research field for decades. Although latest methods have achieved promising performance on benchmark datasets, they typically rely on a large number of manual annotations including both aesthetic labels and related image attributes. In this paper, we revisit the problem of image aesthetic assessment from the selfsupervised feature learning perspective. Our motivation is that a suitable feature representation for image aesthetic assessment should be able to distinguish different expertdesigned image manipulations, which have close relationships with negative aesthetic effects. To this end, we design two novel pretext tasks to identify the types and parameters of editing operations applied to synthetic instances. The features from our pretext tasks are then adapted for a one-layer linear classifier to evaluate the performance in terms of binary aesthetic classification. We conduct extensive quantitative experiments on three benchmark datasets and demonstrate  that our approach can faithfully extract aesthetics-aware features and outperform alternative pretext schemes. Moreover,  we achieve comparable results to state-of-the-art supervised methods that use 10 million labels from ImageNet.</p>`,
     authors:
@@ -1449,8 +1414,7 @@ const publicationsList = [
   {
     id: 90,
     date: "July 05, 2020",
-    title:
-      "LEAN-LIFE: A Label-Efficient Annotation Framework Towards Learning from Explanation",
+    title: "LEAN-LIFE: A Label-Efficient Annotation Framework Towards Learning from Explanation",
     description: `<p><b>Abstract:</b></p><p>Successfully training a deep neural network demands a huge corpus of labeled data. However, each label only provides limited information to learn from and collecting the requisite number of labels involves massive human effort. In this work, we introduce LEAN-LIFE, a web-based, <b>L</b>abel-<b>E</b>fficient <b>A</b>nnotatio<b>N</b> framework for sequence labeling and classification tasks, with an easy-to-use UI that not only allows an annotator to provide the needed labels for a task, but also enables <b>L</b>earn<b>I</b>ng <b>F</b>rom <b>E</b>xplanations for each labeling decision. Such explanations enable us to generate useful additional labeled data from unlabeled instances, bolstering the pool of available training data. On three popular NLP tasks (named entity recognition, relation extraction, sentiment analysis), we find that using this enhanced supervision allows our models to surpass competitive baseline F1 scores by more than 5-10 percentage points, while using 2X times fewer labeled instances. Our framework is the first to utilize this enhanced supervision technique and does so for three important tasks thus providing improved annotation recommendations to users and an ability to build datasets of (data, label, explanation) triples instead of the regular (data, label) pair.</p>`,
     authors:
       "Dong-Ho Lee, Rahul Khanna, Bill Yuchen Lin, Jamin Chen, Seyeon Lee, Qinyuan Ye, Elizabeth Boschee, Leonardo Neves, Xiang Ren",
@@ -1478,8 +1442,7 @@ const publicationsList = [
   {
     id: 92,
     date: "July 09, 2020",
-    title:
-      "MichiGAN: Multi-Input-Conditioned Hair Image Generation for Portrait Editing",
+    title: "MichiGAN: Multi-Input-Conditioned Hair Image Generation for Portrait Editing",
     description: `<p>Despite the recent success of face image generation with GANs, conditional hair editing remains challenging due to the under-explored complexity of its geometry and appearance. In this paper, we present MichiGAN (Multi-InputConditioned Hair Image GAN), a novel conditional image generation method for interactive portrait hair manipulation. To provide user control over every major hair visual factor, we explicitly disentangle hair into four orthogonal attributes, including shape, structure, appearance, and background. For each of them, we design a corresponding condition module to represent, process, and convert user inputs, and modulate the image generation pipeline in ways that respect the natures of different visual attributes. All these condition modules are integrated with the backbone generator to form the final end-toend network, which allows fully-conditioned hair generation from multiple user inputs. Upon it, we also build an interactive portrait hair editing system that enables straightforward manipulation of hair by projecting intuitive and high-level user inputs such as painted masks, guiding strokes, or reference photos to well-defined condition representations. Through extensive experiments and evaluations, we demonstrate the superiority of our method regarding both result quality and user controllability.</p>`,
     authors:
       "Zhentao Tan, Menglei Chai, Dongdong Chen, Jing Liao, Qi Chu, Lu Yuan, Sergey Tulyakov, Nenghai Yu",
@@ -1534,8 +1497,7 @@ const publicationsList = [
   {
     id: 96,
     date: "September 28, 2020",
-    title:
-      "A Good Image Generator Is What You Need for High-Resolution Video Synthesis",
+    title: "A Good Image Generator Is What You Need for High-Resolution Video Synthesis",
     description: `<p><b>ABSTRACT</b></p><p>Image and video synthesis are closely related areas aiming at generating content from noise. While rapid progress has been demonstrated in improving image based models to handle large resolutions, high-quality renderings, and wide variations in image content, achieving comparable video generation results remains problematic. We present a framework that leverages contemporary image generators to render high-resolution videos. We frame the video synthesis problem as discovering a trajectory in the latent space of a pre-trained and fixed image generator. Not only does such a framework render high-resolution videos, but it also is an order of magnitude more computationally efficient. We introduce a motion generator that discovers the desired trajectory, in which content and motion are disentangled. With such a representation, our framework allows for a broad range of applications, including content and motion manipulation. Furthermore, we introduce a new task, which we call cross-domain video synthesis, in which the image and motion generators are trained on disjoint datasets belonging to different domains. This allows for generating moving objects for which the desired video data is not available. Extensive experiments on various datasets demonstrate the advantages of our methods over existing video generation techniques. </p><p>Code will be released at https://github.com/snap-research/MoCoGAN-HD.</p>`,
     authors:
       "Yu Tian, Jian Ren, Menglei Chai, Kyle Olszewski, Xi Peng, Dimitris N. Metaxas, Sergey Tulyakov",
@@ -1549,8 +1511,7 @@ const publicationsList = [
   {
     id: 97,
     date: "November 02, 2020",
-    title:
-      "The Devil is in the Details: Evaluating Limitations of Transformer-based Methods for Granular Tasks",
+    title: "The Devil is in the Details: Evaluating Limitations of Transformer-based Methods for Granular Tasks",
     description: `<p><b>Abstract</b>
     Contextual embeddings derived from transformer-based neural language models have shown state-of-the-art performance for various tasks such as question answering, sentiment analysis, and textual similarity in recent years. Extensive work shows how accurately such models can represent abstract, semantic information present in text. In this expository work, we explore a tangent direction and analyze such models’ performance on tasks that require a more granular level of representation. We focus on the problem of textual similarity from two perspectives: matching documents on a granular level (requiring embeddings to capture fine-grained attributes in the text), and an abstract level (requiring embeddings to capture overall textual semantics).</p><p>We empirically demonstrate, across two datasets from different domains, that despite high performance in abstract document matching as expected, contextual embeddings are consistently (and at times, vastly) outperformed by simple baselines like TF-IDF for more granular tasks. We then propose a simple but effective method to incorporate TF-IDF into models that use contextual embeddings, achieving relative improvements of up to 36% on granular tasks.</p>`,
     authors: "Brihi Joshi, Neil Shah, Francesco Barbieri, Leonardo Neves",
@@ -1564,8 +1525,7 @@ const publicationsList = [
   {
     id: 98,
     date: "November 16, 2020",
-    title:
-      "TWEET EVAL: Unified Benchmark and Comparative Evaluation for Tweet Classification",
+    title: "TWEET EVAL: Unified Benchmark and Comparative Evaluation for Tweet Classification",
     description: `<p><b>Abstract</b>
     The experimental landscape in natural language processing for social media is too fragmented. Each year, new shared tasks and datasets are proposed, ranging from classics like sentiment analysis to irony detection or emoji prediction. Therefore, it is unclear what the current state of the art is, as there is no standardized evaluation protocol, neither a strong set of baselines trained on such domainspecific data. In this paper, we propose a new evaluation framework (TWEETEVAL) consisting of seven heterogeneous Twitter-specific classification tasks. We also provide a strong set of baselines as starting point, and compare different language modeling pre-training strategies. Our initial experiments show the effectiveness of starting off with existing pretrained generic language models, and continue training them on Twitter corpora.</p>`,
     authors:
@@ -1608,8 +1568,7 @@ const publicationsList = [
   {
     id: 101,
     date: "January 04, 2021",
-    title:
-      "AdverTiming Matters: Examining User Ad Consumption for Effective Ad Allocations on Social Media",
+    title: "AdverTiming Matters: Examining User Ad Consumption for Effective Ad Allocations on Social Media",
     description: `<p>Showing ads delivers revenue for online content distributors, but ad exposure can compromise user experience and cause user fatigue and frustration. Correctly balancing ads with other content is imperative. Currently, ad allocation relies primarily on demographics and inferred user interests, which are treated as static features and can be privacy-intrusive. This paper uses person-centric and momentary context features to understand optimal ad-timing. In a quasi-experimental study on a three-month longitudinal dataset of 100K Snapchat users, we find ad timing influences ad effectiveness. We draw insights on the relationship between ad effectiveness and momentary behaviors such as duration, interactivity, and interaction diversity. We simulate ad reallocation, finding that our study-driven insights lead to greater value for the platform. This work advances our understanding of ad consumption and bears implications for designing responsible ad allocation systems, improving both user and platform outcomes. We discuss privacy-preserving components and ethical implications of our work.</p>`,
     authors:
       "Koustuv Saha, Yozen Liu, Nicholas Vincent, Farhan Asif Chowdhury, Leonardo Neves, Neil Shah, Maarten Bos",
@@ -1623,8 +1582,7 @@ const publicationsList = [
   {
     id: 102,
     date: "February 08, 2021",
-    title:
-      "Graph Neural Networks for Friend Ranking in Large-scale Social Platforms",
+    title: "Graph Neural Networks for Friend Ranking in Large-scale Social Platforms",
     description: `<p><b>ABSTRACT</b></p><p> Graph Neural Networks (GNNs) have recently enabled substantial advances in graph learning. Despite their rich representational capacity, GNNs remain under-explored for large-scale social modeling applications. One such industrially ubiquitous application is friend suggestion: recommending users other candidate users to befriend, to improve user connectivity, retention and engagement. However, modeling such user-user interactions on large-scale social platforms poses unique challenges: such graphs often have heavy-tailed degree distributions, where a significant fraction of users are inactive and have limited structural and engagement information. Moreover, users interact with different functionalities, communicate with diverse groups, and have multifaceted interaction patterns. We study the application of GNNs for friend suggestion, providing the first investigation of GNN design for this task, to our knowledge. To leverage the rich knowledge of in-platform actions, we formulate friend suggestion as multi-faceted friend ranking with multi-modal user features and link communication features. We design a neural architecture GraFRank to learn expressive user representations from multiple feature modalities and user-user interactions. Specifically, GraFRank employs modality-specific neighbor aggregators and cross-modality attentions to learn multi-faceted user representations. We conduct experiments on two multi-million user datasets from Snapchat, a leading mobile social platform, where
     GraFRank outperforms several state-of-the-art approaches on candidate retrieval (by 30% MRR) and ranking (by 20% MRR) tasks. Moreover, our qualitative analysis indicates notable gains for critical populations of less-active and low-degree users.</p>`,
     authors: "Aravind Sankar, Yozen Liu, Jun Yu, Neil Shah",
@@ -1638,8 +1596,7 @@ const publicationsList = [
   {
     id: 103,
     date: "February 16, 2021",
-    title:
-      "Significant Otter: Understanding the Role of Biosignals in Communication",
+    title: "Significant Otter: Understanding the Role of Biosignals in Communication",
     description: `<p>ABSTRACT</p><p>With the growing ubiquity of wearable devices, sensed physiological responses provide new means to connect with others. While recent research demonstrates the expressive potential for biosignals, the value of sharing these personal data remains unclear. To understand their role in communication, we created Significant Otter, an Apple Watch/iPhone app that enables romantic partners to share and respond to each other’s biosignals in the form of animated otter avatars. In a one-month study with 20 couples, participants used Significant Otter with biosignals sensing OFF and ON. We found that while sensing OFF enabled couples to keep in touch, sensing ON enabled easier and more authentic communication that fostered social connection. However, the addition of biosignals introduced concerns about autonomy and agency over the messages they sent. We discuss design implications and future directions for communication systems that recommend messages based on biosignals.</p>`,
     authors:
       "Fannie Liu, Chunjong Park, Yu Jiang Tham, Tsung-Yu Tsai, Laura Dabbish, Geoff Kaufman, Andrés Monroy-Hernández",
@@ -1654,8 +1611,7 @@ const publicationsList = [
   {
     id: 104,
     date: "March 15, 2021",
-    title:
-      "CEAM: The Effectiveness of Cyclic and Ephemeral Attention Models of User Behavior on Social Platforms",
+    title: "CEAM: The Effectiveness of Cyclic and Ephemeral Attention Models of User Behavior on Social Platforms",
     description: `<p><b>Abstract</b></p><p>To improve the user experience as well as business outcomes, social platforms aim to predict user behavior. To this end, recurrent models are often used to predict a user’s next behavior based on their most recent behavior. However, people have habits and routines, making it plausible to predict their behavior from more than just their most recent activity. Our work focuses on the interplay between ephemeral and cyclical components of user behaviors. By utilizing user activity data from social platform Snapchat, we uncover cyclic and ephemeral usage patterns on a per user-level. Based on our findings, we imbued recurrent models with awareness: we augment an RNN with a cyclic module to complement traditionalRNNs that model ephemeral behaviors and allow a flexible weighting of the two for the prediction task. We conducted extensive experiments to evaluate our model’s performance on four user behavior prediction tasks on the Snapchat platform.We achieve improved results on each task compared against existing methods, using this simple, but important insight in user behavior: Both cyclical and ephemeral components matter. We show that in some situations and for some people, ephemeral components may be more helpful for predicting behavior, while for others and in other situations, cyclical components may carry more weight.</p>`,
     authors:
       "Farhan Chowdhury, Yozen Liu, Nick Vincent, Koustuv Saha, Leonardo Neves, Neil Shah, Maarten Bos",
@@ -1668,8 +1624,7 @@ const publicationsList = [
   {
     id: 105,
     date: "March 15, 2021",
-    title:
-      "Online Communication Shifts in the Midst of the Covid-19 Pandemic: A Case Study on Snapchat",
+    title: "Online Communication Shifts in the Midst of the Covid-19 Pandemic: A Case Study on Snapchat",
     description: `<p><b>Abstract</b></p><p>The Covid-19 pandemic has created large shifts in how people stay connected with each other in lieu of social distancing and isolation measures. More and more, individuals have turned to online communications as a necessary replacement for in-person interaction. Despite this, the research community has little understanding of how online communications have been influenced by the offline impacts of Covid-19. Our work touches upon this topic. Specifically, we study research questions around the impact of Covid-19 on online public and private sharing propensity, its influence on online communication homophily, and correlations between online communication and offline case severity in the United States. To do so, we study the usage patterns of 79 million US-based users on Snapchat, a large, leading mobile multimedia-driven social sharing platform. Our findings suggest that Covid-19 has increased propensity to privately communicate with friends, while decreasing propensity to publicly share content when users are out-and-about. Moreover, online communications have observed a marked decrease in baseline homophily across locations, ages and genders, with relative increases in cross-group communications. Finally, we observe that increased offline positive Covid-19 case severity in US states is associated with widening gaps between across-state and within-state communication increases after the onset of Covid-19, as well as marked declines in public sharing. We hope our findings drive further interest and work on online communication changes during pandemics and other extended times of crisis.</p>`,
     authors:
       "Qi Yang, Weinan Wang, Lucas Pierce, Rajan Vaish, Xiaolin Shi, Neil Shah",
